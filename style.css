@@ -1,0 +1,78 @@
+@media {
+  min-width: 1024px;
+}
+
+.outer-center {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0px auto;
+  max-width: 1504px;
+}
+
+.navbar-top {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 32px;
+}
+
+.eth-img {
+  display: flex;
+  width: 3%;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  list-style-type: None;
+  width: 55%;
+  overflow: hidden;
+}
+
+.nav-child {
+  padding: 1% 0;
+  margin-right: 5%;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: green;
+  width: 40%;
+  overflow: hidden;
+}
+
+.main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5% 10%;
+}
+
+.ethereum-translate {
+  background-color: red;
+}
+
+.welcome-div {
+  background-color: white;
+}
+
+.welcome-header {
+  font-size: 40px;
+}
+
+.welcome-text {
+  font-size: 20px;
+}
+
+.home {
+}
