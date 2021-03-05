@@ -2,7 +2,49 @@
   .outer-center {
     max-width: 1500px;
   }
+  
 }
+
+@media only screen and (max-device-width: 1015px){ 
+  
+  .nav-child{
+    display: none;
+    background-color: purple;
+  }
+  
+
+  .nav-right{
+    
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-right-container{
+    display: none !important;
+  }
+  
+  .nav-right-smartphone{
+    
+    float: right;
+  }
+
+  .show-icon{
+    display: inline-block !important;
+  }
+
+  #search{
+    display: inline-block !important;
+    
+  }
+  
+  #reorder{
+    display: inline-block !important;
+  }
+
+
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+}
+
 
 .body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -23,7 +65,7 @@
   position: sticky;
   top: 0;
   padding: 1rem 2rem;
-  height: 2.5rem;
+  height: 2rem;
   width: inherit;
   
   background-color: white;
@@ -54,28 +96,39 @@
   display: flex;
   flex-direction: row;
   list-style-type: None;
+  
 }
 
 .nav-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 33%;
+  height: 100%;
   margin-right: 0;
+
 }
 
-.nav-right-ul {
-  position: relative;
+.nav-right-container {
+  /* position: relative;
   overflow: visible;
   float: right;
   display: flex;
   flex-direction: row;
   list-style-type: None;
-  margin-right: 5%;
+  margin-right: 5%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  
 }
 
 .nav-child {
-  padding: 1% 0;
-  margin-right: 5%;
+ /*  padding: 1% 0;
+  margin-right: 5%; */
 }
 
 .nav-child:hover {
@@ -86,6 +139,18 @@
 .search-div {
   position: relative;
   margin: 0;
+  
+  height: inherit;
+}
+
+.language-container{
+  display: flex;
+  align-items: center;
+  
+}
+
+.language-container :first-child{
+  padding-right: 5px;
 }
 
 .search-input:focus {
@@ -96,8 +161,15 @@
 .search-input {
   background-color: white;
   border: 1px solid rgb(127, 127, 127);
-  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  padding: 0.25rem 1rem 0.25rem 0.25rem;  
   border-radius: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
+ height: 75%;
+}
+
+.show-icon{
+  display: none !important;
 }
 
 .search-icon {
@@ -110,6 +182,7 @@
 .search-icon:hover {
   color: rgb(28, 28, 255);
 }
+
 
 .dropdown {
   float: left;
@@ -128,11 +201,17 @@
   margin: 0;
   /* Important for vertical align on mobile phones */
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .dropdown .dropbtn span:hover {
   color: rgb(28, 28, 255);
+}
+
+.dropbtn a{
+  padding-top: 2px !important;
+  align-self: center;
+
 }
 
 .dropdown-content {
